@@ -243,6 +243,14 @@ header .logo {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-color: var(--third-color);
     border-radius: 50%;
+    
+}
+.close-modal:focus,
+.close-modal:hover {
+    box-shadow: none;
+    background-color: transparent;
+    fill: var(--act-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-headline{
@@ -325,15 +333,6 @@ header .logo {
     overflow: hidden;
 }
 
-.policy-checkbox:checked + .policy-box::before {
-    background-color: var(--act-color);
-    background-image: url(../img/check.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    border: hidden;
-}
-
 .policy-box::before {
     display: block;
     content: "";
@@ -342,6 +341,15 @@ header .logo {
     border: 2px solid var(--main-color);
     border-radius: 2px;
     margin-right: 10px;
+}
+
+.policy-checkbox:checked + .policy-box::before {
+    background-color: var(--act-color);
+    background-image: url(../img/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: hidden;
 }
 
 .policy-box a {

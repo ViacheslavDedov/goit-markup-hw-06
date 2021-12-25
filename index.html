@@ -74,14 +74,14 @@
             </label>
             <label class="form-input-box">
                 Телефон
-                <input type="tel" name="" class="form-input" pattern="[0-9]{10}" title="0505555555">
+                <input type="tel" name="user-tel" class="form-input" pattern="[0-9]{10}" title="0505555555">
                 <svg class="form-input-icon">
                     <use href='./img/icons.svg#icon-phone-black'></use>
                 </svg>
             </label>
             <label class="form-input-box">
                 Почта
-                <input type="email" name="" class="form-input">
+                <input type="email" name="user-email" class="form-input">
                 <svg class="form-input-icon">
                     <use href='./img/icons.svg#icon-email-black'></use>
                 </svg>
@@ -91,10 +91,12 @@
                 <textarea name="user-msg" class="form-message" placeholder="Введите текст"></textarea>
             </label>
 
-            <input type="checkbox" class="policy-checkbox" id="policy-check"> 
+            <input type="checkbox" name="check" class="policy-checkbox" id="policy-check"> 
+       
             <label class="policy-box" for="policy-check">
                 Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#">Условия договора</a>
             </label>
+
             <div class="btn-submit">
             <button type="submit" class="form-submit-btn">Отправить</button>
             </div>
