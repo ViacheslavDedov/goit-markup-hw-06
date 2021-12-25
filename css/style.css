@@ -248,7 +248,7 @@ header .logo {
 .close-modal:focus,
 .close-modal:hover {
     box-shadow: none;
-    background-color: transparent;
+    background: transparent;
     fill: var(--act-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
